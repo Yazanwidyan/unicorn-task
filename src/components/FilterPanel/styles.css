@@ -1,0 +1,18 @@
+.label {
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+
+.input-group {
+  margin-bottom: 2rem;
+}
+
+.label-range {
+  margin-bottom: 2.5rem;
+}
+
+.label-category {
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+
+}

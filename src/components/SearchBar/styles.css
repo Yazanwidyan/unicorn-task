@@ -1,0 +1,15 @@
+.searchBar-wrap {
+  margin-bottom: 83px;
+}
+
+.searchBar-wrap input {
+  outline: none;
+  padding: 15px 5px;
+  width: 100%;
+  border-radius: 6px;
+  background-color: transparent;
+}
+
+.searchBar-wrap input::placeholder {
+  color: rgba(0, 0, 0, 0.26);
+}

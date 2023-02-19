@@ -1,0 +1,8 @@
+.product-card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 6px;
+    padding: 30px;
+}

@@ -1,0 +1,16 @@
+.shop_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 120px;
+}
+
+.shop_left_section {
+    flex: 1;
+}
+
+.shop_right_section {
+    flex: 4;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+}

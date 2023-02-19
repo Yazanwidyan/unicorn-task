@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=dm-sans&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'DM Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f7f8;
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+
+input {
+  font-family: 'DM Sans', sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  max-width: 1800px;
+  width: 100%;
+  margin: auto;
+}
