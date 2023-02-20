@@ -1,0 +1,18 @@
+.news-container {
+    background-color: white;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    margin: 80px 0;
+}
+
+.news-container input {
+    width: 50%;
+    background-color: #f4f7f8;
+    height: 64px;
+    border-radius: 10px;
+    border-color: transparent;
+    padding-left: 25px;
+}

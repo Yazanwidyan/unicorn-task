@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import EmptyView from "../../components/EmptyView";
 import FilterPanel from "../../components/FilterPanel";
+import Hero from "../../components/Hero";
 import List from "../../components/List";
 import LoadingOverlay from "../../components/LoadingOverlay";
 import SearchBar from "../../components/SearchBar";
@@ -81,24 +82,27 @@ const Home = () => {
   if (isLoading) return <LoadingOverlay />;
 
   return (
-    <div className="shop_container container">
-      <div className="shop_left_section">
-        <SearchBar
-          value={searchInput}
-          changeInput={(e) => setSearchInput(e.target.value)}
-        />
-        <FilterPanel
-          categoryList={categories}
-          selectedCategory={selectedCategory}
-          selectCategory={handleSelectCategory}
-          selectedPrice={selectedPrice}
-          changePrice={handleChangePrice}
-        />
+    <>
+      <Hero />
+      <div className="shop_container container">
+        <div className="shop_left_section">
+          <SearchBar
+            value={searchInput}
+            changeInput={(e) => setSearchInput(e.target.value)}
+          />
+          <FilterPanel
+            categoryList={categories}
+            selectedCategory={selectedCategory}
+            selectCategory={handleSelectCategory}
+            selectedPrice={selectedPrice}
+            changePrice={handleChangePrice}
+          />
+        </div>
+        <div className="shop_right_section">
+          {resultsFound ? <List list={list} /> : <EmptyView />}
+        </div>
       </div>
-      <div className="shop_right_section">
-        {resultsFound ? <List list={list} /> : <EmptyView />}
-      </div>
-    </div>
+    </>
   );
 };
 

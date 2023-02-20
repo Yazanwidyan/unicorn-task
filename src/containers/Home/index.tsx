@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import Hero from "../../components/Hero";
 import LoadingOverlay from "../../components/LoadingOverlay";
+import NewsLetter from "../../components/NewsLetter";
 import ProductCard from "../../components/ProductCard/ProductCard";
 import { showLoading } from "../../redux/loading.reducer";
 import { setAllProducts } from "../../redux/products.reducer";
@@ -51,6 +53,7 @@ const Home = () => {
 
   return (
     <>
+      <Hero />
       <div className="container">
         <div className="home-container">
           <div className="home-section-title">Our Premium Collection</div>
@@ -121,6 +124,69 @@ const Home = () => {
           <img src="assets/Shape_4.png" alt="" />
           <img src="assets/Shape_1.png" alt="" />
           <img src="assets/Shape_2.png" alt="" />
+        </div>
+      </div>
+      <div className="container">
+        <div className="articles-container">
+          <div className="articles-top-section">
+            <div className="articles-top-left">
+              Get Better Insights from Our Articles
+            </div>
+            <div className="articles-top-right">See more</div>
+          </div>
+          <div className="articles-bottom-section">
+            <div className="articles-card">
+              <img className="articles-image" src="assets/Image.png" alt="" />
+              <div className="articles-title">Best Summer Outfit Style</div>
+              <div className="articles-date">14 Feb</div>
+              <div className="articles-subtitle">
+                Lorem Ipsum has been the industry's standard dummy text ever
+                since the 1500s, when an unknown printer took a galley. Lorem
+                Ipsum has been the industry's standard dummy text ever since the
+                1500s.
+              </div>
+              <div className="articles-explore">Explore More</div>
+            </div>
+            <div className="articles-card">
+              <img className="articles-image" src="assets/Image.png" alt="" />
+              <div className="articles-title">Best Summer Outfit Style</div>
+              <div className="articles-date">14 Feb</div>
+              <div className="articles-subtitle">
+                Lorem Ipsum has been the industry's standard dummy text ever
+                since the 1500s, when an unknown printer took a galley. Lorem
+                Ipsum has been the industry's standard dummy text ever since the
+                1500s.
+              </div>
+              <div className="articles-explore">Explore More</div>
+            </div>
+            <div className="articles-card">
+              <img className="articles-image" src="assets/Image.png" alt="" />
+              <div className="articles-title">Best Summer Outfit Style</div>
+              <div className="articles-date">14 Feb</div>
+              <div className="articles-subtitle">
+                Lorem Ipsum has been the industry's standard dummy text ever
+                since the 1500s, when an unknown printer took a galley. Lorem
+                Ipsum has been the industry's standard dummy text ever since the
+                1500s.
+              </div>
+              <div className="articles-explore">Explore More</div>
+            </div>
+            <div className="articles-card">
+              <img className="articles-image" src="assets/Image.png" alt="" />
+              <div className="articles-title">Best Summer Outfit Style</div>
+              <div className="articles-date">14 Feb</div>
+              <div className="articles-subtitle">
+                Lorem Ipsum has been the industry's standard dummy text ever
+                since the 1500s, when an unknown printer took a galley. Lorem
+                Ipsum has been the industry's standard dummy text ever since the
+                1500s.
+              </div>
+              <div className="articles-explore">Explore More</div>
+            </div>
+          </div>
+        </div>
+        <div className="container">
+          <NewsLetter />
         </div>
       </div>
     </>

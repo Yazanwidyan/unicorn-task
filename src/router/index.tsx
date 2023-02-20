@@ -3,6 +3,7 @@ import NavBar from "../components/Navbar";
 import Home from "../containers/Home";
 import Shop from "../containers/Shop";
 import ProductDetails from "../containers/ProductDetails";
+import Footer from "../components/Footer";
 
 export const Router = () => {
   return (
@@ -11,8 +12,9 @@ export const Router = () => {
       <BaseRoutes>
         <Route path="/" element={<Home />} />
         <Route path="/shop" element={<Shop />} />
-        <Route path="/productDetails:id" element={<ProductDetails />} />
+        <Route path="/shop/:id" element={<ProductDetails />} />
       </BaseRoutes>
+      <Footer />
     </>
   );
 };
